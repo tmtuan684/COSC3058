@@ -1,3 +1,0 @@
-while(frontIsClear()) {
-    move();
-}
