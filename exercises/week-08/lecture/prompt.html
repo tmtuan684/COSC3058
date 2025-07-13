@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialog - Prompt demonstration</title>
+    </head>
+    <body>
+        <h1>Dialog</h1>
+        <script>
+            // Prompt for user input
+            var name = "N/A";
+            while(name == "N/A" || name == "") {
+                name = prompt("What is your name?");
+                if (name) {
+                    alert("Hello " + name);
+                } else {
+                    alert("I have not received your name");
+                }
+            }
+        </script>
+    </body>
+</html>
