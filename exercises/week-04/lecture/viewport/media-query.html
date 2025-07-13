@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demonstration - Media query</title>
+        <style>
+            div {
+                width: 500px;
+                padding: 20px;
+                margin: 20px auto;
+                border: 1px solid black;
+                text-align: center;
+                
+            }
+            @media screen and (max-width: 768px) {
+                div {
+                    background-color: lightblue;
+                }
+            }
+            @media screen and (min-width: 769px) {
+                div {
+                    background-color: lightgreen;
+                }
+            }
+            @media screen and (min-width: 993px) {
+                div {
+                    background-color: lightcoral;
+                }
+            }
+            @media screen and (min-width: 1200px) {
+                div {
+                    background-color: yellow;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Media query demonstration</h1>
+        <div>
+            <p>background color changes at different breakpoints</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS flexbox example</title>
+        <style>
+            div {
+                display:flex;
+                flex-direction: row; 
+                flex-wrap: nowrap;
+                justify-content: center; /* set distribution of flex items along the direction set in the flex-direction property */
+                align-items: center; /* set alignment of flex items along the cross axis */
+            }
+            p {
+                width: 25%;
+                border: 1px solid black;
+                padding: 10px;
+                margin: 10px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>Basic selectors</h1>
+        <div>
+            <p>A type selector is sometimes referred to as a tag name selector or element selector because it selects an HTML tag/element in your document. In the example below, we have used the span, em and strong selectors.</p>
+            <p>The case-sensitive class selector starts with a dot (.) character. It will select everything in the document with that class applied to it. In the live example below we have created a class called highlight, and have applied it to several places in my document. All of the elements that have the class applied are highlighted.</p>
+            <p>The case-sensitive ID selector begins with a # rather than a dot character, but is used in the same way as a class selector. The difference is that an ID can be used only once per page, and elements can only have a single id value applied to them. It can select an element that has the id set on it, and you can precede the ID with a type selector to only target the element if both the element and ID match.</p>
+        </div>
+    </body>
+</html>

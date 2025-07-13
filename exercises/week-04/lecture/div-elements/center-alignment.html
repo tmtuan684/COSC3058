@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Center alignment</title>
+        <style>
+            div {
+                margin: 10px;
+            }
+            .horizontally-centered {
+                width: 400px;
+                height: 200px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            .vertically-centered {
+                width: 400px;
+                height: 200px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Center alignment</h1>
+        <div class="horizontally-centered">
+            <h2>Centered Heading</h2>
+            <p>This paragraph is centered horizontally but not vertically.</p>
+        </div>
+        <div class="vertically-centered">
+            <div style="text-align: center;">
+                <h2>Centered Heading</h2>
+                <p>This paragraph is centered horizontally but not vertically.</p>
+            </div>  
+        </div>
+    </body>
+</html>

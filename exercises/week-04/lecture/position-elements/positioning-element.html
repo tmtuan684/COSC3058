@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning element</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                border: 1px solid black;
+                padding: 10px 10px;
+                box-sizing:border-box;
+                margin: 10px;
+            }
+            div.scrollable {
+                background-color: lightblue;
+                overflow: scroll;
+                width: 100% !important;
+                height: 500px;
+            }
+            div.static-position {
+                position: static; /* default value */
+            }
+            div.relative-position {
+                position: relative;
+            }
+            div.absolute-position {
+                position: absolute;
+            }
+            div.fixed-position {
+                position: fixed;
+            }
+            div.sticky-position {
+                position: sticky;
+            }
+        </style>
+    </head>
+    <body style="overflow: scroll;">
+        <h1>Positioning elements</h1>
+        <div class="scrollable">
+        <div class="static-position">static</div>
+        <div class="static-position">another static</div>
+        <div class="relative-position">relative</div>
+        <div class="relative-position" style="top:0px; left: 100px;">another relative offset to the left by 100px </div>  
+        <div class="relative-position" style="left: 500px">
+             positioned element
+            <div class="absolute-position" style="top:-10px;left: 120px">absolute - offset by 0px top and 120px left from its positioned ancestor</div>
+        </div>  
+        
+        <div class="fixed-position" style="bottom: 100px; right: 200px">fixed</div>
+        <div class="sticky-position" style="bottom: 20px; left: 200px">sticky</div>
+        </div>
+    </body>
+</html>
