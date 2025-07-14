@@ -2,6 +2,7 @@
 
 h1 {
     color: green;
+    text-align: center;
 }
 
 h2 {
@@ -11,9 +12,20 @@ h2 {
 p {
     color: white;
     background-color: black;
+    padding: 20px;
+}
+p:nth-of-type(2) {
+    background-color: yellow;
+    color: black;
 }
 
 button {
     color: red;
     background-color: pink;
+    width: 100px;
+    height: 40px;
+}
+button:hover {
+    background-color: red;
+    color: white;
 }

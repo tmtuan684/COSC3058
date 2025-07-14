@@ -1,4 +1,9 @@
 
+li::marker {
+  font-size: 20px; /* Adjust the size as desired */
+  color: blue; /* Optionally change the colour */
+}
+
 ul li {
     
     width: 70%;
