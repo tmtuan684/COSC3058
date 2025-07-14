@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice: Style for Div</title>
+    <style>
+        #photo-frame-1, #photo-frame-2, #photo-frame-3, #photo-frame-4 {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: lightcoral;
+            border: 5px solid yellow;
+            margin: 20px auto;
+        }
+
+        #photo-frame-1 {
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            /* Or border-radius: 50%; */
+        }
+
+        #photo-frame-2 {
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        #photo-frame-3 {
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+
+        #photo-frame-4 {
+            border-radius: 50px 50px 50px 50px / 70px 70px 70px 70px; /* horizontal radius / vertical radius*/
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+            border-radius: 50%
+        }
+    </style>
+</head>
+<body>
+    <div id="photo-frame-1">
+        <img alt="" src="https://images2.imgbox.com/0e/b2/KMS3nzY1_o.png">
+    </div>
+
+    <div id="photo-frame-2">
+        <img alt="" src="https://images2.imgbox.com/0e/b2/KMS3nzY1_o.png">
+    </div>
+
+     <div id="photo-frame-3">
+        <img alt="" src="https://images2.imgbox.com/0e/b2/KMS3nzY1_o.png">
+    </div>
+
+    <div id="photo-frame-4">
+        <img alt="" src="https://images2.imgbox.com/0e/b2/KMS3nzY1_o.png">
+    </div>
+</body>
+</html>
