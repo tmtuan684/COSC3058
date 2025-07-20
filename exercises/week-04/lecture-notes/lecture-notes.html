@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position, Box Model, layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="main-points">
+        <div style="text-align: left;">Week 4 CSS</div>
+        <ul>
+            <li><a href="#position">Position</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#flexbox">Layout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Position, Box Model, Layout</h1>
+        <!-- CSS Position property-->
+        <section class="lesson">
+            <h2 id="position">Position</h2>
+            <div class="definition">
+                <span>CSS property <span class="key-terms">position</span> controls the position of HTML element in an HTML pages.</span>
+                <ul>
+                    Position has 5 possible values:
+                    <li>static: default value. With this value, an HTML elements appears in the natural flow orders of HTML elements - which element declared first, appears first.</li>
+                    <li>relative: With this value, an HTML elements appears <span>relative</span> to its "static" 
+                    position by distance indicated by property top, left, right, bottom</li>
+                    <li>absolute: an element is freed from natural flow of a page, is positioned relatived to its nearest ancestor which has position style (with values other than default/static) or relative to its contained block (if it has not positioned ancestors)</li>
+                    <li>fixed: an element is freed from natural flow of a page, is positioned relatived to its containing element</li>
+                    <li>sticky: an HTML elements appears in the natural flow orders of HTML elements, offset relative to the nearest scrolling ancestor.</li>
+                </ul>
+                <a href="position-example.html">Examples for position property</a>
+            </div>
+        </section>
+        <!-- Box model -->
+         <section class="lesson">
+            <h2 id="box-model">Box model</h2>
+            <div id="box-border" class="box-model border-box">
+                <span>Every HTML element is contained in a virtual box. This div is formatted <span class="emphasize">border-box</span>, so is total size of this box is the <span class="emphasize">width and height</span> declared in the CSS</span>    
+                <span id="box-border-size" class="div-size"></span>
+            </div>
+
+            <div id="content-border" class="box-model content-box">
+                <span>Every HTML element is contained in a virtual box. This div is formatted <span class="emphasize">content-box</span>, so is total size of this box is the <span class="emphasize">width and height and padding and border</span>  declared in the CSS</span>
+                <span id="box-content-size" class="div-size"></span>
+            </div>
+        </section>
+        <section class="lesson">
+            <h2 id="flexbox">Layout - Flexbox</h2>
+            <div class="definition">
+                Flexbox is a one-dimensional layout for arranging items in rows and columns
+                <div id="flexbox-demo" class="display-flex flex-direction-row">
+                    <div class="flexbox-item">A</div>
+                    <div class="flexbox-item">B</div>
+                    <div class="flexbox-item">C</div>
+                    <div class="flexbox-item">D</div>
+                    <div class="flexbox-item">E</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        window.addEventListener('load', () => {
+            /* Compute the size of the box model */
+            const box_border = document.getElementById('box-border');
+            const box_border_size = document.getElementById('box-border-size');
+            box_border_size.textContent = box_border.getBoundingClientRect().width + " px x " + box_border.getBoundingClientRect().height + " px" 
+
+            const box_content = document.getElementById('content-border');
+            const box_content_size = document.getElementById('box-content-size');
+            box_content_size.textContent = box_content.getBoundingClientRect().width + " px x " + box_content.getBoundingClientRect().height + " px"
+        });
+    </script>
+</body>
+</html>

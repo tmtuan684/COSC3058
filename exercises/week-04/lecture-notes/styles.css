@@ -1,0 +1,135 @@
+:root {
+    --bg-color: #E3E5E0;
+    --bg-main-color: #000054;
+}
+* {
+    margin: 0;
+}
+nav#main-points {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: var(--bg-main-color);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+nav > ul {
+    display: flex;
+}
+nav > ul li {
+    display: inline-block;
+    list-style: none;
+    width: 100px;
+}
+nav > ul li > a {
+    color: white;
+}    
+nav > ul li > a:visited {
+    color: yellow
+}
+main {
+    margin-top: 60px;
+}
+.lesson {
+    margin: 20px auto;
+    padding: 30px;
+    width: 80%;
+    background-color: lightgray;
+}
+/* -------Box model---------- */
+.box-model {
+    margin: 30px auto;
+    
+    width: 400px;
+    height: 300px;
+    background-color: #000054;
+    color:white;
+    padding: 50px;
+    border: 40px solid red;
+}
+.border-box {
+    box-sizing: border-box;
+}
+.content-box {
+    box-sizing: content-box;
+}
+.div-size {
+    margin: 6px auto;
+    display: block;
+    font-size: xx-large; 
+    background-color: yellow; 
+    color: black;
+}
+.emphasize {
+    display: inline-block;
+    font-size: large; 
+    font-weight: bolder;
+    background-color: yellow; 
+
+    color: black;
+    padding: 4px;
+}
+/* -------- Layout -----------*/
+#flexbox-demo, #grid-demo {
+    margin: 30px auto;
+    width: 60%;
+    height: 400px;
+    background-color: lightblue;
+    border: 4px solid red;
+    
+}
+.display-flex {
+    display: flex;
+}
+.flex-direction-row { /* by default*/
+    flex-direction: row;
+    flex-wrap: wrap;    /* Or simply flex-flow: row wrap*/
+
+    /* gap: 4px; */
+    justify-content: center; /* align items along flex direction*/
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    align-items: center;  /* align items along other dimension of direction*/
+    
+}
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-direction-column {
+    flex-direction: column;
+}
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+.flexbox-item {
+    margin: 4; 
+    width: 100px;
+    height: 100px;
+    background: #000054;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
