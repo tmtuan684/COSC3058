@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    
+<div>
+  <main>
+      <h1>Checkout form</h1>
+
+    <div class="checkout-grid">
+      <div id="cart">
+        <h2>Your cart</h2>
+        <ol>
+          <li>Product name</li>
+          <li>Second product</li>
+          <li>Third item</li>
+        </ol>
+      </div>
+      <div id="billing-address">
+        <h2>Billing address</h2>
+        <form>
+          <div>
+            <div>
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" placeholder="" value="" required>
+            
+            </div>
+
+            <div>
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" placeholder="" value="" required>
+            </div>
+
+            <div>
+              <label for="email">Email </label>
+              <input type="email" id="email" placeholder="youname@rmit.edu.vn">
+            </div>
+
+            <div>
+              <label for="address">Address</label>
+              <input type="text" id="address" placeholder="702 Nguyen Van Linh..." required>
+            </div>
+
+          <hr>
+          <div id="payment-methods">
+          <h2>Payment</h2>
+            <div>
+              <input id="credit" name="paymentMethod" type="radio" checked required>
+              <label for="credit">Credit card</label>
+            </div>
+            <div>
+              <input id="debit" name="paymentMethod" type="radio" required>
+              <label for="debit">Debit card</label>
+            </div>
+            <div>
+              <input id="paypal" name="paymentMethod" type="radio" required>
+              <label for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <hr>
+
+          <button type="submit">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
