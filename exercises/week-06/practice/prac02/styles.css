@@ -1,0 +1,64 @@
+#billing-address > form > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+#billing-address label {
+  min-width: 120px;
+  font-weight: 500;
+  text-align: right;
+}
+#billing-address input[type="text"],
+#billing-address input[type="email"] {
+  flex: 1 1 200px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+#billing-address div > div > div {
+  margin: 0;
+  color: #c00;
+  font-size: 0.95em;
+  font-weight: 400;
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+#billing-address {
+  grid-column: 1;
+  grid-row: 1;
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 24px;
+}
+
+#payment-methods {
+  grid-column: 1;
+  grid-row: 2;
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+#cart {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
