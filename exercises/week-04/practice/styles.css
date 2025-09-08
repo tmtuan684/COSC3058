@@ -1,0 +1,110 @@
+:root {
+    --shape-color: green;
+    --shape-border: black;
+    --shape-size: 60px;
+    --circle-diameter: 200px;
+}
+* {
+    margin: 50px auto;
+}
+.rectangle {
+    width: 0px;
+    height: 0px;
+    background-color: var(--shape-color);
+    border-left: 300px solid red;
+    border-bottom: 300px solid blue;
+}
+.circle {
+    width: var(--circle-diameter);
+    height: var(--circle-diameter);
+    border-radius: 50%;
+    background-color: var(--shape-color);
+}
+.ellipse {
+    width: 200px;
+    height: 100px;
+    background-color: var(--shape-color);
+    border-radius: 50%;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    /* background-color: green; */
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent; 
+    border-bottom: 200px solid var(--shape-color);
+}
+.triangle-up {
+    transform: rotate(0);
+}
+.triangle-down {
+    transform: rotate(180deg);
+}
+.triangle-left {
+    transform: rotate(-90deg);
+}
+.triangle-right {
+    transform: rotate(90deg);
+}
+.arrow {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-right: 30px solid var(--shape-color);
+    border-bottom: 30px solid var(--shape-color);
+}
+.arrow-right {
+    transform: rotate(-45deg);
+}
+.arrow-up {
+    transform: rotate(-135deg);
+}
+.arrow-left {
+    transform: rotate(-225deg);
+}
+.arrow-down {
+    transform: rotate(45deg);
+}
+.right-triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid var(--shape-color);
+    border-left: 200px solid transparent;
+}
+
+.star {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  display: block;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid var(--shape-color);
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+.star:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -45px;
+  left: -65px;
+  border-bottom: 80px solid var(--shape-color);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 0;
+  transform: rotate(-35deg);
+}
+.star:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid var(--shape-color);
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+}

@@ -1,0 +1,55 @@
+.container {
+    /* TODO: Write your code */
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+header {
+    /* TODO: Write your code */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 6px; 
+}
+#slider {
+    display: flex;
+    justify-content: center;
+}
+.sticky-tag {
+    position: sticky;
+    top: 100px;
+    right: 10px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    margin: 40px auto;
+    padding: 10 px;
+}
+#merchandise {
+    /* TODO: Write your code to align merchandise item */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+}
+.item {
+    flex-basis: auto;
+}
+#info {
+    display: flex;
+    justify-content: center;
+}
+#info > .info-item:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.info-item {
+    /* TODO: Write your code to align merchandise item*/
+
+}
+.nav > div {
+    /* TODO: Write your code to align menu items */
+
+}

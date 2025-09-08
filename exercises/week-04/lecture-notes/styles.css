@@ -93,11 +93,11 @@ main {
     flex-direction: row;
     flex-wrap: wrap;    /* Or simply flex-flow: row wrap*/
 
-    /* gap: 4px; */
+    gap: 4px;  
     justify-content: center; /* align items along flex direction*/
     /* justify-content: flex-start; */
     /* justify-content: flex-end; */
-    align-items: center;  /* align items along other dimension of direction*/
+    align-items:;  /* align items along other dimension of direction*/
     
 }
 .flex-direction-row-reverse {
